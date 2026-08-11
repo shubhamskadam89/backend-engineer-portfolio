@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react";
 import { initialPortfolioData, PortfolioData } from './data/portfolioData';
 import { ProfileCard } from './components/ProfileCard';
 import { Navbar } from './components/Navbar';
@@ -123,6 +124,7 @@ export default function App() {
         </div>
       </footer>
 
+      <Analytics />
     </div>
   );
 }
